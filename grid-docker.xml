@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  parallel="tests">
+	
+	<parameter name="os" value="Linux"></parameter>
+	<parameter name="br" value="chrome"></parameter>
+	
+  <test thread-count="5" name="Test1">
+    <classes>
+	  <class name="TestCase.LoginTest__001"/>
+      <class name="TestCase.TC__002_LoginTestDDT"/>
+      <class name="TestCase.LoginTest__001"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  	<parameter name="os" value="Linux"></parameter>
+	<parameter name="br" value="firefox"></parameter>
+	
+  <test thread-count="5" name="Test2">
+    <classes>
+	  <class name="TestCase.LoginTest__001"/>
+      <class name="TestCase.TC__002_LoginTestDDT"/>
+      <class name="TestCase.LoginTest__001"/>
+     
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
+
+
